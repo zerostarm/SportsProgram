@@ -27,5 +27,8 @@ public class Basketball extends Sport {
         assists = scan.nextInt();
     }
     
-    public String toString() {return "";}
+    public String toString() {
+        String ret = printCommon();
+        return "";
+    }
 }

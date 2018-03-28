@@ -19,6 +19,8 @@ public class Main {
             else { System.out.println("Invalid sport."); continue; }
             break;
         }
+        sp.setName(name);
+        sp.common();
         sp.setAttrOne();
         sp.setAttrTwo();
         sp.setAttrThree();

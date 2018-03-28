@@ -23,5 +23,8 @@ public class Soccer extends Sport {
         saves = scan.nextInt();
     }
 
-    public String toString() {return "";}
+    public String toString() {
+        String ret = printCommon();
+        return "";
+    }
 }

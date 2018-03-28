@@ -25,5 +25,8 @@ public class Football extends Sport {
         fieldGoals = scan.nextInt();
     }
     
-    public String toString() {return "";}
+    public String toString() {
+        String ret = printCommon();
+        return "";
+    }
 }
