@@ -25,6 +25,9 @@ public class Soccer extends Sport {
 
     public String toString() {
         String ret = printCommon();
-        return "";
+        ret += "\nYellow Cards Per Game: " + ((float) yellow / games);
+        ret += "\nRed Cards Per Game: " + ((float) red / games);
+        ret += "\nSaves Per Game: " + ((float) saves / games);
+        return ret;
     }
 }
