@@ -6,20 +6,22 @@
  * @version 3-27-18
  */
 public class Football extends Sport {
-    private int touchdowns, turnovers, fieldGoals;
+    private int touchdowns, turnovers, fieldGoals, fGTotal;
     
     public void setAttrOne() {
-        System.out.println("Enter the total number of touchdowns for the season:");
+        System.out.println("Enter the total number of touchdowns this season:");
         touchdowns = scan.nextInt();
     }
     
     public void setAttrTwo() {
-        System.out.println("Enter the total number of turnovers for the season:");
+        System.out.println("Enter the total number of turnovers this season:");
         turnovers = scan.nextInt();
     }
     
     public void setAttrThree() {
-        System.out.println("Enter the total number of field goals for the season:");
+        System.out.println("Enter the total number of field goals attempted this season:");
+        fGTotal = scan.nextInt();
+        System.out.println("Enter the total number of field goals made this season:");
         fieldGoals = scan.nextInt();
     }
     
