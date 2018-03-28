@@ -27,6 +27,9 @@ public class Football extends Sport {
     
     public String toString() {
         String ret = printCommon();
-        return "";
+        ret += "\nTouchdowns Per Game: "+((float)touchdowns/games);
+        ret += "\nTurnovers Per Game: "+((float)turnovers/games);
+        ret += "\nField Goal Accuracy: "+((float)fieldGoals/fGTotal);
+        return ret;
     }
 }

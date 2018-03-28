@@ -6,12 +6,14 @@ import java.util.*;
  */
 public abstract class Sport {
     protected Scanner scan = new Scanner(System.in);
-    protected int totalPts, games, passes;
+    protected int totalPts, games, passes, won;
     protected String name;
     
     public void common() {
         System.out.println("Enter the total number of games this season:");
         games = scan.nextInt();
+        System.out.println("Enter the number of games won this season:");
+        won = scan.nextInt();
         System.out.println("Enter the total number of points scored this season:");
         totalPts = scan.nextInt();
         System.out.println("Enter the total number of passes made this season:");
@@ -29,10 +31,11 @@ public abstract class Sport {
     }
     
     public String printCommon() {
-        String ret = "Season Statistics for "+name+"\n---------------------------\n";
+        String ret = "\n\nSeason Statistics for "+name+"\n---------------------------\n";
         ret += "Total Games: "+games;
-        ret += "\nPoints Per Game: "+(totalPts/games);
-        ret += "\nPasses Per Game: "+(passes/games);
+        ret += "\nWin Rate: "+((float)won/games);
+        ret += "\nPoints Per Game: "+((float)totalPts/games);
+        ret += "\nPasses Per Game: "+((float)passes/games);
         return ret;
     }
 }
