@@ -29,8 +29,8 @@ public class Basketball extends Sport {
 
 	public String toString() {
 		String ret = printCommon();
-		ret += "\nTwo Point percentage: " + ((float) two / twoTotal*100) + "%";
-		ret += "\nThree Point percentage: " + ((float) three / threeTotal*100 + "%");
+		ret += "\nTwo-Point Percentage: " + ((float) two / twoTotal*100) + "%";
+		ret += "\nThree-Point Percentage: " + ((float) three / threeTotal*100 + "%");
 		ret += "\nAssists per Game: " + ((float) assists / games);
 		return ret;
 	}
