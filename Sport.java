@@ -33,7 +33,7 @@ public abstract class Sport {
     public String printCommon() {
         String ret = "\n\nSeason Statistics for "+name+"\n---------------------------\n";
         ret += "Total Games: "+games;
-        ret += "\nWin Rate: "+((float)won/games);
+        ret += "\nWin Rate: "+((float)won/games*100)+"%\n";
         ret += "\nPoints Per Game: "+((float)totalPts/games);
         ret += "\nPasses Per Game: "+((float)passes/games);
         return ret;
