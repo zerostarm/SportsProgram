@@ -21,6 +21,8 @@ public class Main {
                 sp = new Soccer();
             else if (sport.equalsIgnoreCase("football"))
                 sp = new Football();
+            else if (sport.equalsIgnoreCase("easter egg"))
+                sp = new EasterEgg();
             else {
                 System.out.println("Invalid sport.");
                 continue;
