@@ -29,11 +29,13 @@ public class Main {
             }
             break;
         }
-        sp.setName(name);
-        sp.common();
-        sp.setAttrOne();
-        sp.setAttrTwo();
-        sp.setAttrThree();
+        if (!(sp instanceof EasterEgg)) {
+            sp.setName(name);
+            sp.common();
+            sp.setAttrOne();
+            sp.setAttrTwo();
+            sp.setAttrThree();
+        }
         System.out.println(sp);
     }
 }
